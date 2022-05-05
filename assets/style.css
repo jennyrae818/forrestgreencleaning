@@ -20,11 +20,12 @@ body {
 }
 
 
+
 /*HEADER*/
 
 .header {
   width: auto;
-  display: block;
+  display: block; /*this is what is keeping it centered*/
   text-align: center;
   justify-content: space-between;
   padding-top: 20px;
@@ -53,6 +54,8 @@ body {
   font-weight: 300;
 }
 
+
+
 /*ABOUT ME*/
 
 .about-me {
@@ -65,12 +68,23 @@ body {
   color: var(--white);
 }
 
+
+
+/* ALL H2, paragraphs and links */
 h2 {
   padding-top: 6%;
   text-align: center;
   font-size: 40px;
   font-family: var(--mont-alts);
   font-weight: 100;
+}
+
+h3 {
+  padding-top: 6%;
+  text-align: center;
+  font-size: 24px;
+  font-family: var(--mont-alts);
+  font-weight: 400;
 }
 
 p {
@@ -81,27 +95,10 @@ p {
   padding: 0 100px 0 100px;
 }
 
-
-/*ALL LINKS*/
-/* this controls the links at the top of the page */
 a {
   color: var(--mustard);
   text-decoration: none;
 }
-
-
-/* .main-photo {
-  height: 500px;
-  width: 100%;
-  margin-bottom: 25px;
-  background-image: url("../images/IMG_6706.jpeg");
-  background-size: cover;
-  background-position: center;
-  opacity: 1.0;
-} */
-
-
-
 
 .back-to-top {
   padding: 10px;
@@ -112,19 +109,42 @@ a {
 
 
 
-/* 
-.images >img {
+/*Services BLOCKS*/
+.container {
   display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.images-container{
-  width: 300px;
-  height:370px;
+.container .box {
+  margin: 15px;
+  width: 200px;
+  height: 270px;
+  background-color: var(--mustard);
+  text-align: center;
 }
-*/
+
+
+
+/*REVIEWS BLOCKS*/
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.reviews-container .box {
+  margin: 15px;
+  width: 200px;
+  height: 270px;
+  background-color: var(--lightgreen);
+}
+
+
+/*IMAGE BLOCK */
+
 .images-container {
   display: flex;
   flex-wrap: wrap;
@@ -137,6 +157,7 @@ a {
   width: 200px;
   height: 270px;
 }
+
 img {
   display: block;
   margin-left: auto;
@@ -148,94 +169,26 @@ img:hover {
   opacity: 0.5;
 }
 
+
+
+/*CONTACT ME*/
+
 .contact-me {
-  text-align: absolute;
   list-style-position: inside;
   font-size: 20px;
   line-height: 120%;
   width: auto;
-  font-family: var(--gruppo);
-  background-color: var(--header);
+  font-family: var(--montserrat);
+  font-weight: 100;
+  color: var(--white);
+  background-color: var(--lightgreen);
 }
 
-.contact {
-  font-size: 40px;
-  color: #ffffff;
-  padding-top: 10px;
-}
 
+
+/*FOOTER*/
 
 footer {
   font-family: 'gruppo';
   text-align: center;
 }
-
-
-/*
-:root {
-    --brown: #a88f82;
-    --tan: #f5e1d5;
-    --teal: #71a8a7;
-    --lightteal: #d5f5f5;
-    --light: #fffaf7;
-  }
-  
-  ::selection {
-    color: var(--brown);
-    background-color: var(--light);
-  }
-  
-  body {
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-  }
-  
-  .custom-navbar {
-    background-color: var(--teal);
-  }
-  
-  .custom-navbar a {
-    font-size: 1.5rem;
-    color: var(--lightteal);
-  }
-  
-  .custom-navbar a:hover {
-    color: var(--light);
-  }
-  
-  .custom-jumbotron {
-    background-color: var(--lightteal);
-    color: var(--teal);
-  }
-  
-  .custom-btn {
-    background-color: var(--brown);
-    color: var(--light);
-  }
-  
-  .custom-btn:hover {
-    background-color: var(--tan);
-    color: var(--brown);
-  }
-  
-  .custom-card {
-    border-color: var(--teal);
-    color: var(--brown);
-  }
-  
-  .custom-card-header {
-    background-color: var(--teal);
-    color: var(--lightteal);
-  }
-*/  
