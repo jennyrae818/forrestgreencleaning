@@ -100,12 +100,19 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  color: var(--darkgreen);
+}
+
 .back-to-top {
   padding: 10px;
   text-align:center;
-  font-family: 'gruppo';
+  font-family: var(--montserrat);
+  font-weight: 300;
   font-size: 16px;
 }
+
+
 
 
 
@@ -145,7 +152,16 @@ a {
  }
 
  .onetime {
-  text-align: left;
+  text-align: center;
+ }
+
+ .onetime-list {
+   display: inline-block;
+  text-align: center;
+ }
+
+ .onetime-list ul li {
+  text-align: center;
  }
 
 
@@ -177,6 +193,7 @@ a {
 }
 
 
+
 /*IMAGE BLOCKS  */
 
 .images-container {
@@ -205,6 +222,7 @@ img {
 
 
 
+
 /*CONTACT ME*/
 
 .contact-me {
@@ -217,6 +235,11 @@ img {
   color: var(--white);
   background-color: var(--lightgreen);
 }
+.contact-me a{
+ font-weight: 300;
+}
+
+
 
 
 
